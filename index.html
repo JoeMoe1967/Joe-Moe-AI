@@ -34,6 +34,8 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
 
+    line-height:1.6;
+
 }
 
 
@@ -56,7 +58,7 @@ body{
 
     text-align:center;
 
-    padding:40px 20px;
+    padding:40px 20px 20px 20px;
 
 }
 
@@ -66,7 +68,9 @@ body{
 
     font-size:3rem;
 
-    margin-bottom:15px;
+    margin-bottom:10px;
+
+    letter-spacing:2px;
 
 }
 
@@ -74,13 +78,13 @@ body{
 
 .hero p{
 
-    color:#ccc;
+    color:#cccccc;
+
+    font-size:1.1rem;
 
     max-width:700px;
 
     margin:auto;
-
-    font-size:1.2rem;
 
 }
 
@@ -90,7 +94,7 @@ body{
 
     max-width:700px;
 
-    margin:40px auto;
+    margin:30px auto;
 
     padding:0 20px;
 
@@ -108,15 +112,25 @@ body{
 
     text-align:center;
 
-    padding:18px;
+    padding:22px;
 
     margin:15px 0;
 
     border-radius:14px;
 
-    font-size:1.2rem;
+    font-size:1.25rem;
 
     font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:translateY(-2px);
 
 }
 
@@ -132,7 +146,7 @@ body{
 
 .apple{
 
-    background:#666;
+    background:#666666;
 
 }
 
@@ -154,13 +168,57 @@ body{
 
 
 
+.featured{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+
+
+.featured-box{
+
+    background:#111;
+
+    border:1px solid #222;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+
+.featured-box h2{
+
+    margin-bottom:10px;
+
+}
+
+
+
+.featured-box p{
+
+    color:#cccccc;
+
+}
+
+
+
 .section{
 
     max-width:900px;
 
     margin:auto;
 
-    padding:60px 20px;
+    padding:50px 20px;
 
 }
 
@@ -182,9 +240,9 @@ body{
 
     border:1px solid #222;
 
-    padding:18px;
-
     border-radius:12px;
+
+    padding:18px;
 
     margin-bottom:12px;
 
@@ -192,21 +250,9 @@ body{
 
 
 
-.qr{
+.about{
 
     text-align:center;
-
-}
-
-
-
-.qr img{
-
-    width:220px;
-
-    max-width:80%;
-
-    border-radius:12px;
 
 }
 
@@ -221,6 +267,8 @@ footer{
     color:#888;
 
     border-top:1px solid #222;
+
+    margin-top:30px;
 
 }
 
@@ -246,6 +294,14 @@ footer{
 
 
 
+.btn{
+
+    font-size:1.1rem;
+
+}
+
+
+
 }
 
 
@@ -264,7 +320,9 @@ footer{
 
 <p>
 
-Musik mit Haltung, Herz und künstlicher Intelligenz
+KI-Musik, echte Geschichten und norddeutsche Leidenschaft.
+
+Jetzt auf Spotify, Apple Music, Amazon Music und YouTube Music streamen.
 
 </p>
 
@@ -273,7 +331,7 @@ Musik mit Haltung, Herz und künstlicher Intelligenz
 <section class="streaming">
 
 
-🎵 Spotify
+🎵 Jetzt auf Spotify hören
 
 
 🍎 Apple Music
@@ -286,11 +344,27 @@ Musik mit Haltung, Herz und künstlicher Intelligenz
 
 </section>
 
+<section class="featured">
+
+<div class="featured-box">
+
+<h2>🎵 Aktuelle Single: Wahre Freunde</h2>
+
+<p>
+
+Freundschaft ist kein Wort.<br>
+
+Freundschaft ist ein Versprechen.
+
+</p>
+
+</div>
+
+</section>
+
 <section class="section">
 
-<h2>Aktuelle Veröffentlichungen</h2>
-
-<div class="song">🎵 Wahre Freunde</div>
+<h2>Weitere Veröffentlichungen</h2>
 
 <div class="song">🎵 Generationen</div>
 
@@ -304,17 +378,17 @@ Musik mit Haltung, Herz und künstlicher Intelligenz
 
 </section>
 
-<section class="section">
+<section class="section about">
 
 <h2>Über Joe Moe AI</h2>
 
-<p style="text-align:center;">
+<p>
 
-Emotionale Songs, norddeutsche Geschichten,
+Joe Moe AI verbindet moderne KI-Technologie mit echten Geschichten,
 
-Fußballleidenschaft und moderne KI-Technologie
+Emotionen, Fußballleidenschaft und norddeutscher Authentizität.
 
-vereint in einer einzigartigen musikalischen Mischung.
+Musik für Menschen, die mehr hören wollen als nur den nächsten Beat.
 
 </p>
 
@@ -322,7 +396,7 @@ vereint in einer einzigartigen musikalischen Mischung.
 
 <footer>
 
-© 2026 Joe Moe AI
+<p>© 2026 Joe Moe AI</p>
 
 </footer>
 

@@ -34,7 +34,19 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
 
-    line-height:1.6;
+}
+
+
+
+.hero-image{
+
+    width:100%;
+
+    max-height:650px;
+
+    object-fit:cover;
+
+    display:block;
 
 }
 
@@ -42,43 +54,9 @@ body{
 
 .hero{
 
-    position:relative;
-
-    height:100vh;
-
-    background:url('joe-moe-ai-neu.jpg') center center;
-
-    background-size:cover;
-
-    background-repeat:no-repeat;
-
-}
-
-
-
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,0.65);
-
-
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-
-
     text-align:center;
 
-    padding:20px;
+    padding:40px 20px;
 
 }
 
@@ -86,9 +64,7 @@ body{
 
 .hero h1{
 
-    font-size:4rem;
-
-    letter-spacing:3px;
+    font-size:3rem;
 
     margin-bottom:15px;
 
@@ -96,23 +72,27 @@ body{
 
 
 
-.subtitle{
+.hero p{
 
-    font-size:1.3rem;
+    color:#ccc;
 
-    max-width:800px;
+    max-width:700px;
 
-    margin-bottom:40px;
+    margin:auto;
+
+    font-size:1.2rem;
 
 }
 
 
 
-.buttons{
+.streaming{
 
-    width:100%;
+    max-width:700px;
 
-    max-width:450px;
+    margin:40px auto;
+
+    padding:0 20px;
 
 }
 
@@ -124,35 +104,19 @@ body{
 
     text-decoration:none;
 
-    color:#fff;
+    color:white;
 
-
+    text-align:center;
 
     padding:18px;
 
-    margin:12px 0;
+    margin:15px 0;
 
-
-
-    border-radius:12px;
-
-
+    border-radius:14px;
 
     font-size:1.2rem;
 
     font-weight:bold;
-
-
-
-    transition:all 0.3s ease;
-
-}
-
-
-
-.btn:hover{
-
-    transform:translateY(-3px);
 
 }
 
@@ -168,7 +132,7 @@ body{
 
 .apple{
 
-    background:#666666;
+    background:#666;
 
 }
 
@@ -192,13 +156,11 @@ body{
 
 .section{
 
-    max-width:1000px;
+    max-width:900px;
 
     margin:auto;
 
-    padding:80px 20px;
-
-    text-align:center;
+    padding:60px 20px;
 
 }
 
@@ -206,9 +168,9 @@ body{
 
 .section h2{
 
-    font-size:2.2rem;
+    text-align:center;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
 
@@ -220,21 +182,31 @@ body{
 
     border:1px solid #222;
 
+    padding:18px;
+
     border-radius:12px;
 
-    padding:20px;
-
-    margin:15px 0;
-
-    font-size:1.1rem;
+    margin-bottom:12px;
 
 }
 
 
 
-.about{
+.qr{
 
-    background:#0d0d0d;
+    text-align:center;
+
+}
+
+
+
+.qr img{
+
+    width:220px;
+
+    max-width:80%;
+
+    border-radius:12px;
 
 }
 
@@ -242,13 +214,13 @@ body{
 
 footer{
 
-    border-top:1px solid #222;
+    text-align:center;
 
     padding:40px;
 
-    text-align:center;
+    color:#888;
 
-    color:#999;
+    border-top:1px solid #222;
 
 }
 
@@ -258,19 +230,19 @@ footer{
 
 
 
-    .hero h1{
+.hero h1{
 
-        font-size:2.5rem;
+    font-size:2.2rem;
 
-    }
+}
 
 
 
-    .subtitle{
+.hero p{
 
-        font-size:1rem;
+    font-size:1rem;
 
-    }
+}
 
 
 
@@ -284,22 +256,24 @@ footer{
 
 <body>
 
-<section class="hero">
+<img src="joe-moe-ai-neu.jpg" class="hero-image" alt="Joe Moe AI">
 
-<div class="overlay">
+<section class="hero">
 
 <h1>Joe Moe AI</h1>
 
-<p class="subtitle">
+<p>
 
 Musik mit Haltung, Herz und künstlicher Intelligenz
 
 </p>
 
-<div class="buttons">
+</section>
+
+<section class="streaming">
 
 
-🎵 Jetzt auf Spotify hören
+🎵 Spotify
 
 
 🍎 Apple Music
@@ -310,15 +284,11 @@ Musik mit Haltung, Herz und künstlicher Intelligenz
 
 ▶️ YouTube Music
 
-</div>
-
-</div>
-
 </section>
 
 <section class="section">
 
-<h2>Aktuelle Songs</h2>
+<h2>Aktuelle Veröffentlichungen</h2>
 
 <div class="song">🎵 Wahre Freunde</div>
 
@@ -328,21 +298,23 @@ Musik mit Haltung, Herz und künstlicher Intelligenz
 
 <div class="song">🎵 Summer Nights</div>
 
+<div class="song">🎵 Smålands Harmoni</div>
+
+<div class="song">🎵 Away Day</div>
+
 </section>
 
-<section class="section about">
+<section class="section">
 
 <h2>Über Joe Moe AI</h2>
 
-<p>
+<p style="text-align:center;">
 
-Joe Moe AI verbindet moderne KI-Technologie mit echten Geschichten,
+Emotionale Songs, norddeutsche Geschichten,
 
-norddeutscher Authentizität und emotionaler Musik.
+Fußballleidenschaft und moderne KI-Technologie
 
-Die Songs behandeln Themen wie Freundschaft, Generationen,
-
-Fußball, Freiheit, Reisen und das Leben selbst.
+vereint in einer einzigartigen musikalischen Mischung.
 
 </p>
 
@@ -350,11 +322,10 @@ Fußball, Freiheit, Reisen und das Leben selbst.
 
 <footer>
 
-<p>© 2026 Joe Moe AI</p>
+© 2026 Joe Moe AI
 
 </footer>
 
 </body>
 
 </html>
-

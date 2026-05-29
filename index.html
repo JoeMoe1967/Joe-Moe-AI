@@ -1,130 +1,360 @@
 <!DOCTYPE html>
+
 <html lang="de">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joe Moe AI</title>
+
+<title>Joe Moe AI | Offizielle Künstlerseite</title>
 
 <style>
 
-body{
+
+
+*{
+
     margin:0;
-    background:#000;
-    color:#fff;
-    font-family:Arial,Helvetica,sans-serif;
+
+    padding:0;
+
+    box-sizing:border-box;
+
 }
+
+
+
+body{
+
+    background:#000;
+
+    color:#fff;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    line-height:1.6;
+
+}
+
+
 
 .hero{
-    height:100vh;
-    background:url('joe-moe-ai.jpg');
-    background-size:cover;
+
     position:relative;
+
+    height:100vh;
+
+    background:url('joe-moe-ai.jpg') center center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
 }
+
+
 
 .overlay{
+
     position:absolute;
+
     inset:0;
-    background:rgba(0,0,0,.65);
+
+    background:rgba(0,0,0,0.65);
+
+
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
+
+
     text-align:center;
+
+    padding:20px;
+
 }
 
-h1{
+
+
+.hero h1{
+
     font-size:4rem;
-    margin-bottom:10px;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
 }
 
-p{
-    font-size:1.2rem;
+
+
+.subtitle{
+
+    font-size:1.3rem;
+
+    max-width:800px;
+
+    margin-bottom:40px;
+
 }
+
+
 
 .buttons{
-    margin-top:30px;
+
+    width:100%;
+
+    max-width:450px;
+
 }
+
+
 
 .btn{
+
     display:block;
-    width:280px;
-    margin:12px auto;
-    padding:16px;
-    border-radius:10px;
-    color:white;
+
     text-decoration:none;
-    font-size:1.1rem;
+
+    color:#fff;
+
+
+
+    padding:18px;
+
+    margin:12px 0;
+
+
+
+    border-radius:12px;
+
+
+
+    font-size:1.2rem;
+
     font-weight:bold;
+
+
+
+    transition:all 0.3s ease;
+
 }
+
+
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
 
 .spotify{
+
     background:#1DB954;
+
 }
+
+
 
 .apple{
-    background:#666;
+
+    background:#666666;
+
 }
+
+
 
 .amazon{
+
     background:#FF9900;
+
 }
+
+
 
 .youtube{
+
     background:#FF0000;
+
 }
 
-.footer{
-    padding:40px;
+
+
+.section{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:80px 20px;
+
     text-align:center;
+
 }
+
+
+
+.section h2{
+
+    font-size:2.2rem;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.song{
+
+    background:#111;
+
+    border:1px solid #222;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    margin:15px 0;
+
+    font-size:1.1rem;
+
+}
+
+
+
+.about{
+
+    background:#0d0d0d;
+
+}
+
+
+
+footer{
+
+    border-top:1px solid #222;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#999;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+
+
+    .subtitle{
+
+        font-size:1rem;
+
+    }
+
+
+
+}
+
+
 
 </style>
 
 </head>
+
 <body>
 
-<div class="hero">
+<section class="hero">
 
 <div class="overlay">
 
 <h1>Joe Moe AI</h1>
 
-<p>Musik mit Haltung, Herz und künstlicher Intelligenz</p>
+<p class="subtitle">
+
+Musik mit Haltung, Herz und künstlicher Intelligenz
+
+</p>
 
 <div class="buttons">
 
-<a class="btn spotify"
-href="https://open.spotify.com/artist/4RMZczDeXXDJ1aBYWQXMIm"
-target="_blank">Spotify</a>
 
-<a class="btn apple"
-href="https://music.apple.com/de/artist/joe-moe-ai/1883946342"
-target="_blank">Apple Music</a>
+🎵 Jetzt auf Spotify hören
 
-<a class="btn amazon"
-href="https://music.amazon.de/artists/B0GS435QYP/joe-moe-ai"
-target="_blank">Amazon Music</a>
 
-<a class="btn youtube"
-href="https://www.youtube.com/@JoeMoeAI"
-target="_blank">YouTube Music</a>
+🍎 Apple Music
+
+
+🎧 Amazon Music
+
+
+▶️ YouTube Music
 
 </div>
 
 </div>
 
-</div>
+</section>
 
-<div class="footer">
+<section class="section">
 
-<h2>Joe Moe AI</h2>
+<h2>Aktuelle Songs</h2>
+
+<div class="song">🎵 Wahre Freunde</div>
+
+<div class="song">🎵 Generationen</div>
+
+<div class="song">🎵 Camperleben</div>
+
+<div class="song">🎵 Summer Nights</div>
+
+</section>
+
+<section class="section about">
+
+<h2>Über Joe Moe AI</h2>
 
 <p>
-Generationen • Wahre Freunde • Camperleben • Summer Nights
+
+Joe Moe AI verbindet moderne KI-Technologie mit echten Geschichten,
+
+norddeutscher Authentizität und emotionaler Musik.
+
+Die Songs behandeln Themen wie Freundschaft, Generationen,
+
+Fußball, Freiheit, Reisen und das Leben selbst.
+
 </p>
 
-</div>
+</section>
+
+<footer>
+
+<p>© 2026 Joe Moe AI</p>
+
+</footer>
 
 </body>
+
 </html>
+
